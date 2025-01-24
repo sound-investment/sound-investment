@@ -53,3 +53,24 @@ footer {
     margin-top: 80px; /* Adds space between the list and footer */
     color: #0078d7; 
 }
+
+/* Adjust title size for smaller screens */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 18px; /* Adjust to a smaller size that fits */
+        text-align: center; /* Optional: Ensure the text is centered */
+    }
+}
+
+/* Adjust image size for smaller screens */
+@media (max-width: 768px) {
+    img {
+        width: 100%; /* Makes the image take the full width of its container */
+        max-width: 400px; /* Optional: Limits the maximum size */
+        height: auto; /* Keeps the aspect ratio */
+        display: block; /* Ensures proper centering if combined with margin auto */
+        margin: 0 auto; /* Centers the image horizontally */
+    }
+}
+
+
