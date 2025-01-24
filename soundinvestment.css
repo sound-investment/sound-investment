@@ -57,7 +57,7 @@ footer {
 /* Adjust title size for smaller screens */
 @media (max-width: 768px) {
     h1 {
-        font-size: 18px; /* Adjust to a smaller size that fits */
+        font-size: 25px; /* Adjust to a smaller size that fits */
         text-align: center; /* Optional: Ensure the text is centered */
     }
 }
