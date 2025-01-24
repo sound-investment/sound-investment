@@ -20,7 +20,7 @@ a img {
 }
 
 a img:hover {
-    opacity: 0.8; /* Makes the image slightly transparent */
+    opacity: 1; /* Makes the image slightly transparent */
 }
 
 /* Style for "Intac - Famous Singer" */
