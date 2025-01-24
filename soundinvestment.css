@@ -1,0 +1,55 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    text-align: center;
+    padding: 20px;
+}
+
+h1 {
+    color: #0078d7;
+}
+img {
+    max-width: 50%;
+    height: auto;
+    border-radius: 0px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+a img {
+    transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+a img:hover {
+    opacity: 0.8; /* Makes the image slightly transparent */
+}
+
+/* Style for "Intac - Famous Singer" */
+h2 {
+    font-family: "Times New Roman", Times, serif; /* Times New Roman font */
+    font-weight: bold; /* Makes the text bold */
+    color: black; /* Sets the text color to black */
+    text-align: center; /* Centers the heading */
+    margin-top: 20px; /* Adds space above the heading */
+}
+
+/* Style for the ordered list */
+ol {
+    font-family: "Times New Roman", Times, serif; /* Times New Roman font */
+    text-align: center; /* Aligns the list to the center */
+    margin: 20px auto; /* Centers the list horizontally */
+    padding: 0 20px; /* Adds padding inside the list container */
+    max-width: 600px; /* Limits the width for readability */
+    list-style-position: inside; /* Brings numbers closer to the text */
+}
+
+/* Style for list items */
+ol li {
+    margin-bottom: 5px; /* Reduces spacing between items */
+    line-height: 1.5; /* Improves readability */
+    padding-left: 10px; /* Adjusts spacing between numbers and text */
+}
+footer {
+    text-align: center; /* Center the text */
+    margin-top: 80px; /* Adds space between the list and footer */
+    color: #0078d7; 
+}
