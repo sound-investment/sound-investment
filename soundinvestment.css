@@ -4,6 +4,17 @@ body {
     text-align: center; /* Ensures header, image, and footer are centered */
 }
 
+/* Styling for the new text above the image */
+.sound-text {
+    font-family: "Times New Roman", Times, serif;
+    font-size: 32px; /* Large text */
+    font-weight: bold; /* Bold text */
+    text-align: left; /* Left-aligned */
+    max-width: 600px; /* Keeps it from stretching too wide */
+    margin: 20px auto; /* Centers the block but keeps text left-aligned */
+    line-height: 1.2; /* Adjust spacing between lines */
+}
+
 h1 {
     color: #0078d7;
 }
@@ -43,6 +54,10 @@ footer {
         height: auto;
         display: block;
         margin: 0 auto;
+    }
+
+    .sound-text {
+        font-size: 28px; /* Slightly smaller on mobile */
     }
 }
 
