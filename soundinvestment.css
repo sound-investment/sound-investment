@@ -1,28 +1,35 @@
 body {
-    font-family: Arial, sans-serif; /* default font for rest of page */
+    font-family: Arial, sans-serif; /* Default font for rest of page */
     padding: 20px;
+    text-align: center; /* Ensure everything is centered except the manifesto */
 }
 
-p {
+/* Manifesto text - left aligned & in Times New Roman */
+.manifesto-container {
+    text-align: left; /* Only the manifesto text is left-aligned */
     font-family: "Times New Roman", Times, serif;
-    text-align: left;
-    margin-bottom: 1em;
+    display: inline-block; /* Prevents full-width stretching */
+    margin: 20px auto;
+    max-width: 600px; /* Keeps manifesto from being too wide */
+    line-height: 1.5;
 }
 
 /* Optional: specifically style the manifesto title */
-p strong {
+.manifesto-container strong {
     font-size: 1.2em;
 }
 
 h1 {
     color: #0078d7;
 }
+
 img {
     max-width: 50%;
     height: auto;
     border-radius: 0px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
+
 a img {
     transition: transform 0.2s ease, opacity 0.2s ease;
 }
@@ -41,7 +48,7 @@ footer {
 @media (max-width: 768px) {
     h1 {
         font-size: 25px; /* Adjust to a smaller size that fits */
-        text-align: center; /* Optional: Ensure the text is centered */
+        text-align: center; /* Ensure the text is centered */
     }
 }
 
