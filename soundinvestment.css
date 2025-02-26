@@ -1,22 +1,7 @@
 body {
-    font-family: Arial, sans-serif; /* Default font for rest of page */
+    font-family: Arial, sans-serif; /* Default font for the page */
     padding: 20px;
-    text-align: center; /* Ensure everything is centered except the manifesto */
-}
-
-/* Manifesto text - left aligned & in Times New Roman */
-.manifesto-container {
-    text-align: left; /* Only the manifesto text is left-aligned */
-    font-family: "Times New Roman", Times, serif;
-    display: inline-block; /* Prevents full-width stretching */
-    margin: 20px auto;
-    max-width: 600px; /* Keeps manifesto from being too wide */
-    line-height: 1.5;
-}
-
-/* Optional: specifically style the manifesto title */
-.manifesto-container strong {
-    font-size: 1.2em;
+    text-align: center; /* Ensures header, image, and footer are centered */
 }
 
 h1 {
@@ -28,6 +13,8 @@ img {
     height: auto;
     border-radius: 0px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    display: block;
+    margin: 20px auto; /* Centers the image */
 }
 
 a img {
@@ -35,32 +22,27 @@ a img {
 }
 
 a img:hover {
-    opacity: 1; /* Makes the image slightly transparent */
+    opacity: 1; /* Keeps hover effect */
 }
 
 footer {
-    text-align: center; /* Center the text */
-    margin-top: 80px; /* Adds space between the list and footer */
+    text-align: center; /* Ensures footer text is centered */
+    margin-top: 80px;
     color: #0078d7; 
 }
 
-/* Adjust title size for smaller screens */
+/* Responsive adjustments */
 @media (max-width: 768px) {
     h1 {
-        font-size: 25px; /* Adjust to a smaller size that fits */
-        text-align: center; /* Ensure the text is centered */
+        font-size: 25px;
     }
-}
 
-/* Adjust image size for smaller screens */
-@media (max-width: 768px) {
     img {
-        width: 100%; /* Makes the image take the full width of its container */
-        max-width: 400px; /* Optional: Limits the maximum size */
-        height: auto; /* Keeps the aspect ratio */
-        display: block; /* Ensures proper centering if combined with margin auto */
-        margin: 0 auto; /* Centers the image horizontally */
+        width: 100%;
+        max-width: 400px;
+        height: auto;
+        display: block;
+        margin: 0 auto;
     }
 }
-
 
