@@ -6,15 +6,15 @@ body {
 
 h1 {
     color: #0078d7;
-    margin-bottom: 50px; /* Adds space below the header for rotating text */
+    margin-bottom: 60px; /* Adds space below the header for rotating text */
 }
 
-/* Oval Rotating Text Styling */
+/* Circular Text Styling */
 .circle-container {
     position: relative;
-    width: 300px; /* Wider for an oval shape */
-    height: 200px; /* Shorter height to maintain the oval */
-    margin: 0 auto 50px auto; /* Centers it and adds space below */
+    width: 250px; /* Keeps the circle properly sized */
+    height: 250px;
+    margin: 0 auto 60px auto; /* Centers it and adds space below */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -31,11 +31,11 @@ h1 {
     position: absolute;
     left: 50%;
     top: 50%;
+    transform-origin: 0 125px; /* Keeps text evenly spaced in a circle */
     font-size: 16px;
     font-weight: bold;
     font-style: normal; /* Regular text */
     font-family: "Times New Roman", serif;
-    transform-origin: center;
 }
 
 /* Rotating animation */
@@ -73,23 +73,24 @@ footer {
 /* 📱 Mobile adjustments */
 @media (max-width: 768px) {
     h1 {
-        font-size: 22px; /* Make the heading slightly smaller on mobile */
-        margin-bottom: 50px; /* Adds space below the header for rotating text */
+        font-size: 22px; /* Keep the header readable on small screens */
+        margin-bottom: 50px; /* Ensure space between the header and rotating text */
     }
 
     .circle-container {
-        width: 260px; /* Slightly smaller oval on mobile */
-        height: 180px;
-        margin-bottom: 50px; /* Adds space between rotating text and image */
+        width: 200px; /* Adjust size for smaller screens */
+        height: 200px;
+        margin-bottom: 50px; /* Ensures space between rotating text and image */
     }
 
     .circle-text span {
         font-size: 14px; /* Adjust text size for smaller screens */
+        transform-origin: 0 100px;
     }
 
     /* Ensure "Famous Singer" image stays responsive */
     img {
-        width: 80%; /* Scales properly on small screens */
+        width: 80%; /* Keep the image from overflowing */
         max-width: 300px; /* Prevents it from being too big */
         height: auto;
     }
