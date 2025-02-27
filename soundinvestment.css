@@ -27,6 +27,7 @@ h1 {
     animation: rotateText 10s linear infinite;
 }
 
+/* Keeps each letter upright */
 .circle-text span {
     position: absolute;
     left: 50%;
@@ -36,6 +37,8 @@ h1 {
     font-weight: bold;
     font-style: normal; /* Regular text */
     font-family: "Times New Roman", serif;
+    text-transform: uppercase;
+    transform: rotate(calc(var(--angle) * 1deg)) translate(110px) rotate(calc(var(--angle) * -1deg));
 }
 
 /* Rotating animation */
@@ -101,6 +104,7 @@ footer {
         margin-top: 50px;
     }
 }
+
 
 
 
