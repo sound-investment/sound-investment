@@ -73,7 +73,7 @@ footer {
 /* 📱 Mobile adjustments */
 @media (max-width: 768px) {
     h1 {
-        font-size: 22px; /* Keep the header readable on small screens */
+        font-size: 25px; /* Keep the header readable on small screens */
         margin-bottom: 50px; /* Ensure space between the header and rotating text */
     }
 
@@ -90,7 +90,7 @@ footer {
 
     /* Ensure "Famous Singer" image stays responsive */
     img {
-        width: 80%; /* Keep the image from overflowing */
+        width: 85%; /* Keep the image from overflowing */
         max-width: 300px; /* Prevents it from being too big */
         height: auto;
     }
