@@ -8,6 +8,41 @@ h1 {
     color: #0078d7;
 }
 
+/* Circular Text Styling */
+.circle-container {
+    position: relative;
+    width: 250px; /* Adjust as needed */
+    height: 250px;
+    margin: 0 auto 20px auto; /* Centers it between heading and image */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.circle-text {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    animation: rotateText 10s linear infinite;
+}
+
+.circle-text span {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform-origin: 0 125px; /* Adjust for proper spacing */
+    font-size: 16px;
+    font-weight: bold;
+    font-style: italic;
+    font-family: "Times New Roman", serif;
+}
+
+/* Rotating animation */
+@keyframes rotateText {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+}
+
 img {
     max-width: 50%;
     height: auto;
@@ -44,5 +79,16 @@ footer {
         display: block;
         margin: 0 auto;
     }
+
+    .circle-container {
+        width: 200px; /* Smaller circle on mobile */
+        height: 200px;
+    }
+
+    .circle-text span {
+        font-size: 14px; /* Adjust text size for smaller screens */
+        transform-origin: 0 100px;
+    }
 }
+
 
