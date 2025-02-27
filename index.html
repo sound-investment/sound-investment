@@ -9,6 +9,11 @@
 <body>
     <h1>sound-investment.net</h1>
 
+    <!-- Circular Rotating Text -->
+    <div class="circle-container">
+        <div class="circle-text"></div>
+    </div>
+
     <a href="https://patreon.com/intac" target="_blank">
         <img src="famoussinger.jpg" alt="intac: famous singer" />
     </a>
@@ -16,6 +21,21 @@
     <footer>
         BUG WORLD / SOUND INVESTMENT 2025 ALL RIGHTS RESERVED
     </footer>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            let text = "SOUND MAKING REQUIRES SOUND INVESTMENT REQUIRES "; // Custom text
+            let container = document.querySelector('.circle-text');
+            let radius = 110; // Adjust radius for spacing
+
+            for (let i = 0; i < text.length; i++) {
+                let letter = document.createElement('span');
+                letter.innerText = text[i];
+                let angle = (360 / text.length) * i; // Spread letters evenly
+                letter.style.transform = `rotate(${angle}deg) translate(${radius}px) rotate(-${angle}deg)`;
+                container.appendChild(letter);
+            }
+        });
+    </script>
 </body>
 </html>
-
