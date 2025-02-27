@@ -13,7 +13,7 @@ h1 {
     position: relative;
     width: 250px; /* Adjust as needed */
     height: 250px;
-    margin: 0 auto 20px auto; /* Centers it between heading and image */
+    margin: 0 auto 20px auto; /* Centers it */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -33,7 +33,7 @@ h1 {
     transform-origin: 0 125px; /* Adjust for proper spacing */
     font-size: 16px;
     font-weight: bold;
-    font-style: normal;
+    font-style: normal; /* Regular text */
     font-family: "Times New Roman", serif;
 }
 
@@ -43,27 +43,13 @@ h1 {
     to { transform: rotate(360deg); }
 }
 
-img {
-    max-width: 50%;
-    height: auto;
-    border-radius: 0px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    display: block;
-    margin: 20px auto; /* Centers the image */
-}
-
-a img {
-    transition: transform 0.2s ease, opacity 0.2s ease;
-}
-
-a img:hover {
-    opacity: 1; /* Keeps hover effect */
-}
-
-footer {
-    text-align: center; /* Ensures footer text is centered */
-    margin-top: 80px;
-    color: #0078d7; 
+/* Image inside the circle */
+.circle-image {
+    width: 120px; /* Adjust to fit inside the text circle */
+    height: 120px;
+    border-radius: 50%; /* Makes the image circular */
+    object-fit: cover; /* Ensures the image fills the circle */
+    position: absolute;
 }
 
 /* Responsive adjustments */
@@ -89,6 +75,10 @@ footer {
         font-size: 14px; /* Adjust text size for smaller screens */
         transform-origin: 0 100px;
     }
-}
 
+    .circle-image {
+        width: 90px; /* Smaller image for mobile */
+        height: 90px;
+    }
+}
 
