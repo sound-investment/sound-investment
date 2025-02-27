@@ -97,8 +97,9 @@ footer {
 
     /* Adjust footer spacing */
     footer {
-        font-size: 10px; /* Make footer text slightly smaller */
-        margin-top: 50px;
+        font-size: 10px; /* Make text smaller */
+        white-space: nowrap; /* Prevents text from breaking into two lines */
+        overflow: hidden; /* Ensures it stays within the container */
     }
 }
 
