@@ -11,7 +11,32 @@
 
     <!-- Circular Rotating Text -->
     <div class="circle-container">
-        <div class="circle-text"></div>
+        <div class="circle-text">
+            <span style="--angle: 0">S</span>
+            <span style="--angle: 15">O</span>
+            <span style="--angle: 30">U</span>
+            <span style="--angle: 45">N</span>
+            <span style="--angle: 60">D</span>
+            <span style="--angle: 75"> </span>
+            <span style="--angle: 90">M</span>
+            <span style="--angle: 105">A</span>
+            <span style="--angle: 120">K</span>
+            <span style="--angle: 135">I</span>
+            <span style="--angle: 150">N</span>
+            <span style="--angle: 165">G</span>
+            <span style="--angle: 180"> </span>
+            <span style="--angle: 195">R</span>
+            <span style="--angle: 210">E</span>
+            <span style="--angle: 225">Q</span>
+            <span style="--angle: 240">U</span>
+            <span style="--angle: 255">I</span>
+            <span style="--angle: 270">R</span>
+            <span style="--angle: 285">E</span>
+            <span style="--angle: 300">S</span>
+            <span style="--angle: 315"> </span>
+            <span style="--angle: 330">S</span>
+            <span style="--angle: 345">O</span>
+        </div>
     </div>
 
     <a href="https://patreon.com/intac" target="_blank">
@@ -21,21 +46,6 @@
     <footer>
         BUG WORLD / SOUND INVESTMENT 2025 ALL RIGHTS RESERVED
     </footer>
-
-    <script>
-        document.addEventListener("DOMContentLoaded", function () {
-            let text = "SOUND MAKING REQUIRES SOUND INVESTMENT REQUIRES "; // Custom text
-            let container = document.querySelector('.circle-text');
-            let radius = 110; // Adjust radius for spacing
-
-            for (let i = 0; i < text.length; i++) {
-                let letter = document.createElement('span');
-                letter.innerText = text[i];
-                let angle = (360 / text.length) * i; // Spread letters evenly
-                letter.style.transform = `rotate(${angle}deg) translate(${radius}px) rotate(-${angle}deg)`;
-                container.appendChild(letter);
-            }
-        });
-    </script>
 </body>
 </html>
+
