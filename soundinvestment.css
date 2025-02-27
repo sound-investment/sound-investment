@@ -96,12 +96,16 @@ footer {
     }
 
     /* Adjust footer spacing */
-    footer {
-        font-size: 10px; /* Make text smaller */
+   footer {
+        font-size: 10px !important; /* Force smaller text */
         white-space: nowrap; /* Prevents text from breaking into two lines */
         overflow: hidden; /* Ensures it stays within the container */
+        display: block; /* Ensures footer behaves correctly */
+        text-align: center; /* Keep it centered */
+        max-width: 100%; /* Make sure it doesn't stretch */
     }
 }
+
 
 
 
