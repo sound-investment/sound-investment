@@ -32,12 +32,13 @@ h1 {
     position: absolute;
     left: 50%;
     top: 50%;
-    transform-origin: 0 125px; /* Adjusted for better spacing */
+    transform-origin: 0 125px; /* Ensures text follows a perfect circle */
     font-size: 16px;
     font-weight: bold;
     font-style: normal; /* Regular text */
     font-family: "Times New Roman", serif;
     text-transform: uppercase;
+    white-space: nowrap; /* Prevents letters from breaking */
     transform: rotate(calc(var(--angle) * 1deg)) translate(110px) rotate(calc(var(--angle) * -1deg));
 }
 
