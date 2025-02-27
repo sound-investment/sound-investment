@@ -6,14 +6,15 @@ body {
 
 h1 {
     color: #0078d7;
+    margin-bottom: 50px; /* Adds space below the header for rotating text */
 }
 
-/* Circular Text Styling */
+/* Oval Rotating Text Styling */
 .circle-container {
     position: relative;
-    width: 250px; /* Adjust as needed */
-    height: 250px;
-    margin: 0 auto 20px auto; /* Centers it between heading and image */
+    width: 300px; /* Wider for an oval shape */
+    height: 200px; /* Shorter height to maintain the oval */
+    margin: 0 auto 50px auto; /* Centers it and adds space below */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -30,11 +31,11 @@ h1 {
     position: absolute;
     left: 50%;
     top: 50%;
-    transform-origin: 0 125px; /* Adjust for proper spacing */
     font-size: 16px;
     font-weight: bold;
-    font-style: normal;
+    font-style: normal; /* Regular text */
     font-family: "Times New Roman", serif;
+    transform-origin: center;
 }
 
 /* Rotating animation */
@@ -43,6 +44,7 @@ h1 {
     to { transform: rotate(360deg); }
 }
 
+/* Image Styling */
 img {
     max-width: 50%;
     height: auto;
@@ -52,6 +54,7 @@ img {
     margin: 20px auto; /* Centers the image */
 }
 
+/* Hover effect for images */
 a img {
     transition: transform 0.2s ease, opacity 0.2s ease;
 }
@@ -60,35 +63,43 @@ a img:hover {
     opacity: 1; /* Keeps hover effect */
 }
 
+/* Footer Styling */
 footer {
     text-align: center; /* Ensures footer text is centered */
     margin-top: 80px;
     color: #0078d7; 
 }
 
-/* Responsive adjustments */
+/* 📱 Mobile adjustments */
 @media (max-width: 768px) {
     h1 {
-        font-size: 25px;
-    }
-
-    img {
-        width: 100%;
-        max-width: 400px;
-        height: auto;
-        display: block;
-        margin: 0 auto;
+        font-size: 22px; /* Make the heading slightly smaller on mobile */
+        margin-bottom: 50px; /* Adds space below the header for rotating text */
     }
 
     .circle-container {
-        width: 200px; /* Smaller circle on mobile */
-        height: 200px;
+        width: 260px; /* Slightly smaller oval on mobile */
+        height: 180px;
+        margin-bottom: 50px; /* Adds space between rotating text and image */
     }
 
     .circle-text span {
         font-size: 14px; /* Adjust text size for smaller screens */
-        transform-origin: 0 100px;
+    }
+
+    /* Ensure "Famous Singer" image stays responsive */
+    img {
+        width: 80%; /* Scales properly on small screens */
+        max-width: 300px; /* Prevents it from being too big */
+        height: auto;
+    }
+
+    /* Adjust footer spacing */
+    footer {
+        font-size: 12px; /* Make footer text slightly smaller */
+        margin-top: 50px;
     }
 }
+
 
 
