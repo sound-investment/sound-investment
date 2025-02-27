@@ -97,7 +97,7 @@ footer {
 
     /* Adjust footer spacing */
     footer {
-        font-size: 12px; /* Make footer text slightly smaller */
+        font-size: 10px; /* Make footer text slightly smaller */
         margin-top: 50px;
     }
 }
