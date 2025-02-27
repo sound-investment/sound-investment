@@ -9,7 +9,7 @@
 <body>
     <h1>sound-investment.net</h1>
 
-    <!-- Circular Rotating Text -->
+    <!-- Oval Rotating Text -->
     <div class="circle-container">
         <div class="circle-text"></div>
     </div>
@@ -26,13 +26,16 @@
         document.addEventListener("DOMContentLoaded", function () {
             let text = "SOUND MAKING REQUIRES SOUND INVESTMENT REQUIRES "; // Custom text
             let container = document.querySelector('.circle-text');
-            let radius = 110; // Adjust radius for spacing
+            let radiusX = 140; // Adjust width (horizontal stretch)
+            let radiusY = 90; // Adjust height (vertical stretch)
 
             for (let i = 0; i < text.length; i++) {
                 let letter = document.createElement('span');
                 letter.innerText = text[i];
                 let angle = (360 / text.length) * i; // Spread letters evenly
-                letter.style.transform = `rotate(${angle}deg) translate(${radius}px) rotate(-${angle}deg)`;
+                let x = Math.cos(angle * (Math.PI / 180)) * radiusX;
+                let y = Math.sin(angle * (Math.PI / 180)) * radiusY;
+                letter.style.transform = `translate(${x}px, ${y}px) rotate(${angle}deg)`;
                 container.appendChild(letter);
             }
         });
