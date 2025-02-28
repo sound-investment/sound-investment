@@ -51,19 +51,28 @@ h1 {
     font-size: 24px;
     font-weight: bold;
     text-align: center;
-    margin-top: 50px;
+    margin-top: 50px; /* 50px space between rotating text and "CLICK HERE" on desktop */
     margin-bottom: 15px;
     cursor: pointer;
-    animation: flashColors 2s infinite;
+    animation: flashColors 3s steps(1) infinite;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
 }
 
-/* Flashing Animation */
+/* Flashing Arrows */
+.arrow {
+    font-size: 30px;
+    animation: flashColors 3s steps(1) infinite;
+}
+
+/* Choppy Flashing Animation */
 @keyframes flashColors {
-    0% { color: red; }
-    25% { color: blue; }
-    50% { color: green; }
-    75% { color: orange; }
-    100% { color: red; }
+    0%, 25% { color: red; }
+    26%, 50% { color: blue; }
+    51%, 75% { color: green; }
+    76%, 100% { color: orange; }
 }
 
 /* Image Styling */
@@ -111,9 +120,9 @@ footer {
 
     .click-text {
         font-size: 20px;
-        margin-top: 35px;
+        margin-top: 80px; /* More space above "CLICK HERE" on mobile */
         margin-bottom: 10px;
-        animation: flashColors 2s infinite;
+        animation: flashColors 3s steps(1) infinite;
     }
 
     /* Responsive Image */
@@ -133,5 +142,4 @@ footer {
         max-width: 100%;
     }
 }
-
 
