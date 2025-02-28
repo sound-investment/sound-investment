@@ -106,8 +106,15 @@ img {
 /* Footer Styling */
 footer {
     text-align: center;
-    margin-top: 80px;
+    margin-top: 40px;
     color: #0078d7;
+}
+
+/* Footer Image */
+.footer-image {
+    max-width: 100px; /* Small image */
+    height: auto;
+    margin-bottom: 10px; /* Space between image and footer text */
 }
 
 /* Mobile adjustments */
@@ -129,8 +136,8 @@ footer {
 
     .click-text {
         font-size: 20px;
-        margin-top: 85px; /* Increased space above "CLICK HERE" on mobile */
-        margin-bottom: 1px; /* Reduced space below "CLICK HERE" on mobile */
+        margin-top: 80px; /* Increased space above "CLICK HERE" on mobile */
+        margin-bottom: 5px; /* Reduced space below "CLICK HERE" on mobile */
         animation: flashText 3s steps(1) infinite; /* Ensuring choppy animation on mobile */
     }
 
@@ -143,6 +150,10 @@ footer {
         max-width: 300px;
         height: auto;
         margin: 5px auto; /* Reduced space on mobile */
+    }
+
+    .footer-image {
+        max-width: 80px; /* Smaller footer image on mobile */
     }
 
     footer {
