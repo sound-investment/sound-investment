@@ -51,16 +51,10 @@ h1 {
     font-size: 24px;
     font-weight: bold;
     text-align: center;
-    color: red !important; /* Forces red color across all devices */
     margin-top: 50px;
     margin-bottom: 15px;
     cursor: pointer;
-    transition: color 0.3s ease-in-out;
-}
-
-/* Hover Effect */
-.click-text:hover {
-    color: blue;
+    animation: flashColors 2s infinite;
 }
 
 /* Flashing Animation */
@@ -70,23 +64,6 @@ h1 {
     50% { color: green; }
     75% { color: orange; }
     100% { color: red; }
-}
-
-.click-text.flash {
-    animation: flashColors 2s infinite;
-}
-
-/* Smooth Gradient Animation */
-@keyframes gradientColors {
-    0% { color: red; }
-    25% { color: purple; }
-    50% { color: cyan; }
-    75% { color: lime; }
-    100% { color: red; }
-}
-
-.click-text.gradient {
-    animation: gradientColors 3s infinite linear;
 }
 
 /* Image Styling */
@@ -136,7 +113,7 @@ footer {
         font-size: 20px;
         margin-top: 35px;
         margin-bottom: 10px;
-        color: red !important; /* Ensures red text on mobile */
+        animation: flashColors 2s infinite;
     }
 
     /* Responsive Image */
@@ -156,6 +133,5 @@ footer {
         max-width: 100%;
     }
 }
-
 
 
