@@ -59,7 +59,7 @@ h1 {
     margin-top: 50px;
     margin-bottom: 5px; /* Reduced space between "CLICK HERE" and image */
     cursor: pointer;
-    animation: flashText 3s steps(1) infinite;
+    animation: flashText 3s steps(1) infinite; /* Choppy animation */
     display: flex;
     align-items: center;
     justify-content: center;
@@ -69,7 +69,7 @@ h1 {
 /* Flashing Arrows */
 .arrow {
     font-size: 30px;
-    animation: flashArrows 3s steps(1) infinite;
+    animation: flashArrows 3s steps(1) infinite; /* Choppy animation */
 }
 
 /* Choppy Flashing Animation for Text */
@@ -129,9 +129,13 @@ footer {
 
     .click-text {
         font-size: 20px;
-        margin-top: 80px; /* Increased space above "CLICK HERE" on mobile */
-        margin-bottom: 5px; /* Reduced space below "CLICK HERE" on mobile */
-        animation: flashText 3s steps(1) infinite;
+        margin-top: 100px; /* Increased space above "CLICK HERE" on mobile */
+        margin-bottom: 1px; /* Reduced space below "CLICK HERE" on mobile */
+        animation: flashText 3s steps(1) infinite; /* Ensuring choppy animation on mobile */
+    }
+
+    .arrow {
+        animation: flashArrows 3s steps(1) infinite; /* Ensuring choppy animation on mobile */
     }
 
     img {
