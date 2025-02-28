@@ -112,7 +112,7 @@ footer {
 
 /* Footer Image */
 .footer-image {
-    max-width: 100px; /* Small image */
+    max-width: 75px; /* Small image */
     height: auto;
     margin-bottom: 10px; /* Space between image and footer text */
 }
@@ -153,7 +153,7 @@ footer {
     }
 
     .footer-image {
-        max-width: 80px; /* Smaller footer image on mobile */
+        max-width: 50px; /* Smaller footer image on mobile */
     }
 
     footer {
