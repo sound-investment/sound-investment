@@ -52,7 +52,7 @@ h1 {
     font-weight: bold;
     text-align: center;
     color: red;  /* Change text to red */
-    margin-top: 25px; /* Adjusted space above */
+    margin-top: 45px; /* Adjusted space above */
     margin-bottom: 15px; /* Less space below on desktop */
     cursor: pointer;
 }
