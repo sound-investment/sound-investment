@@ -14,8 +14,10 @@
         <div class="circle-text"></div>
     </div>
 
-    <!-- Click Here Text -->
-    <p class="click-text">[CLICK HERE]</p>
+    <!-- Click Here Text with Flashing Arrows -->
+    <p class="click-text">
+        <span class="arrow">⬇</span> [CLICK HERE] <span class="arrow">⬇</span>
+    </p>
 
     <!-- Image with Link -->
     <a href="https://patreon.com/intac" target="_blank">
@@ -28,14 +30,14 @@
 
     <script>
         document.addEventListener("DOMContentLoaded", function () {
-            let text = "SOUND MAKING REQUIRES SOUND INVESTMENT REQUIRES "; // Custom text
+            let text = "SOUND MAKING REQUIRES SOUND INVESTMENT REQUIRES "; 
             let container = document.querySelector('.circle-text');
-            let radius = 110; // Adjust radius for spacing
+            let radius = 110; 
 
             for (let i = 0; i < text.length; i++) {
                 let letter = document.createElement('span');
                 letter.innerText = text[i];
-                let angle = (360 / text.length) * i; // Spread letters evenly
+                let angle = (360 / text.length) * i;
                 letter.style.transform = `rotate(${angle}deg) translate(${radius}px) rotate(-${angle}deg)`;
                 container.appendChild(letter);
             }
@@ -43,4 +45,5 @@
     </script>
 </body>
 </html>
+
 
