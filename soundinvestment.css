@@ -136,7 +136,7 @@ footer {
 
     .click-text {
         font-size: 20px;
-        margin-top: 70px; /* Increased space above "CLICK HERE" on mobile */
+        margin-top: 50px; /* Increased space above "CLICK HERE" on mobile */
         margin-bottom: 5px; /* Reduced space below "CLICK HERE" on mobile */
         animation: flashText 3s steps(1) infinite; /* Ensuring choppy animation on mobile */
     }
