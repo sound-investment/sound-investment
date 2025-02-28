@@ -52,7 +52,7 @@ h1 {
     font-weight: bold;
     text-align: center;
     margin-top: 30px;  /* Adjust spacing above the text */
-    margin-bottom: 30px; /* Adjust spacing below the text */
+    margin-bottom: 10px; /* Adjust spacing below the text */
     cursor: pointer;
 }
 
@@ -102,8 +102,8 @@ footer {
     /* Click Here Text - Mobile */
     .click-text {
         font-size: 20px;
-        margin-top: 25px; /* Adjust spacing for mobile */
-        margin-bottom: 25px;
+        margin-top: 35px; /* Adjust spacing for mobile */
+        margin-bottom: 10px;
     }
 
     /* Responsive Image */
