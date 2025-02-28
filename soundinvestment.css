@@ -51,8 +51,9 @@ h1 {
     font-size: 24px;
     font-weight: bold;
     text-align: center;
-    margin-top: 30px;  /* Adjust spacing above the text */
-    margin-bottom: 10px; /* Adjust spacing below the text */
+    color: red;  /* Change text to red */
+    margin-top: 25px; /* Adjusted space above */
+    margin-bottom: 15px; /* Less space below on desktop */
     cursor: pointer;
 }
 
@@ -63,7 +64,7 @@ img {
     border-radius: 0px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     display: block;
-    margin: 20px auto;
+    margin: 10px auto; /* Less space between "CLICK HERE" and image */
 }
 
 /* Hover effect for images */
@@ -102,8 +103,8 @@ footer {
     /* Click Here Text - Mobile */
     .click-text {
         font-size: 20px;
-        margin-top: 35px; /* Adjust spacing for mobile */
-        margin-bottom: 10px;
+        margin-top: 35px; /* More space above */
+        margin-bottom: 10px; /* Less space below */
     }
 
     /* Responsive Image */
@@ -123,7 +124,6 @@ footer {
         max-width: 100%;
     }
 }
-
 
 
 
