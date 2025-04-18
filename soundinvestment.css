@@ -45,7 +45,6 @@ h1 {
 
 .subheader a:hover::after {
     opacity: 1;
-    animation: electricWiggle 0.3s infinite linear;
 }
 
 /* Circular Rotating Text */
@@ -173,15 +172,6 @@ footer {
     margin-bottom: 10px;
 }
 
-/* Wiggle Animation */
-@keyframes electricWiggle {
-    0%   { transform: translateX(-1px); }
-    25%  { transform: translateX(1px); }
-    50%  { transform: translateX(-2px); }
-    75%  { transform: translateX(2px); }
-    100% { transform: translateX(0px); }
-}
-
 /* Mobile adjustments */
 @media (max-width: 768px) {
     h1 {
@@ -220,7 +210,6 @@ footer {
 
     .subheader a:hover::after {
         opacity: 1;
-        animation: electricWiggle 0.3s infinite linear;
     }
 
     .circle-container {
