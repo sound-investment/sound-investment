@@ -18,7 +18,7 @@ h1 {
     font-style: italic;
     padding-top: 10px;      /* replaced margin-top */
     margin-top: 0;
-    margin-bottom: 100px;
+    margin-bottom: 90px;
     color: #333;
 }
 
@@ -171,7 +171,7 @@ footer {
         font-style: italic;
         padding-top: 8px;
         margin-top: 0;
-        margin-bottom: 90px;
+        margin-bottom: 80px;
     }
 
     .circle-container {
