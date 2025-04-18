@@ -8,7 +8,7 @@ body {
 /* Header */
 h1 {
     color: #0078d7;
-    margin-bottom: 0; /* Tight spacing above subheader */
+    margin-bottom: 0; /* Keep subheader tight underneath */
 }
 
 /* Subheader under main title */
@@ -16,8 +16,8 @@ h1 {
     font-family: "Times New Roman", serif;
     font-size: 18px;
     font-style: italic;
-    margin-top: -10px; /* Pull closer to h1 */
-    margin-bottom: 40px; /* Space before the circle */
+    margin-top: -10px;
+    margin-bottom: 60px; /* More space before the circle */
     color: #333;
 }
 
@@ -28,17 +28,6 @@ h1 {
 
 .subheader a:hover {
     text-decoration: underline;
-}
-
-/* Blinking Text */
-.blink {
-    animation: blink 1s steps(2, start) infinite;
-}
-
-@keyframes blink {
-    to {
-        visibility: hidden;
-    }
 }
 
 /* Circular Rotating Text */
@@ -176,7 +165,7 @@ footer {
     .subheader {
         font-size: 16px;
         margin-top: -5px;
-        margin-bottom: 30px;
+        margin-bottom: 50px;
     }
 
     .circle-container {
