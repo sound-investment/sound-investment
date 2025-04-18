@@ -16,16 +16,16 @@ h1 {
     font-family: "Times New Roman", serif;
     font-size: 18px;
     font-style: italic;
-    padding-top: 10px;      /* replaced margin-top */
+    padding-top: 10px;
     margin-top: 0;
     margin-bottom: 90px;
-    color: green; /* or #00cc00, #009900, etc. */
+    color: #333;
 }
 
 .subheader a {
     font-family: "Times New Roman", serif;
     font-style: italic;
-    color: green; /* ← try 'green' or a hex like '#00cc00' */
+    color: green; /* changed from #0078d7 to green */
     text-decoration: none;
 }
 
@@ -174,6 +174,12 @@ footer {
         margin-bottom: 80px;
     }
 
+    .subheader a {
+        font-family: "Times New Roman", serif;
+        font-style: italic;
+        color: green;
+    }
+
     .circle-container {
         width: 200px;
         height: 200px;
@@ -216,4 +222,5 @@ footer {
         max-width: 100%;
     }
 }
+
 
