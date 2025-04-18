@@ -17,7 +17,7 @@ h1 {
     font-size: 18px;
     font-style: italic;
     margin-top: -10px;
-    margin-bottom: 60px; /* More space before the circle */
+    margin-bottom: 80px; /* More space before the circle */
     color: #333;
 }
 
@@ -165,7 +165,7 @@ footer {
     .subheader {
         font-size: 16px;
         margin-top: -5px;
-        margin-bottom: 50px;
+        margin-bottom: 70px;
     }
 
     .circle-container {
