@@ -19,7 +19,7 @@ h1 {
     padding-top: 10px;      /* replaced margin-top */
     margin-top: 0;
     margin-bottom: 90px;
-    color: #333;
+    color: green; /* or #00cc00, #009900, etc. */
 }
 
 .subheader a {
