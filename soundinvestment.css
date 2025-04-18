@@ -22,16 +22,29 @@ h1 {
 }
 
 .subheader a {
+    position: relative;
     font-family: "Times New Roman", serif;
     font-style: italic;
-    color: #00cc00; /* finance green */
+    color: #00cc00;
     text-decoration: none;
-    border-bottom: 2px solid transparent;
-    transition: border-color 0.2s ease;
 }
 
-.subheader a:hover {
-    border-bottom: 2px solid #ffcc00; /* bright gold/yellow underline */
+.subheader a::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -3px;
+    width: 100%;
+    height: 2px;
+    background-color: #ffcc00;
+    transform: translateX(0);
+    opacity: 0;
+    transition: opacity 0.2s ease;
+}
+
+.subheader a:hover::after {
+    opacity: 1;
+    animation: electricWiggle 0.3s infinite linear;
 }
 
 /* Circular Rotating Text */
@@ -159,6 +172,15 @@ footer {
     margin-bottom: 10px;
 }
 
+/* Wiggle Animation */
+@keyframes electricWiggle {
+    0%   { transform: translateX(-1px); }
+    25%  { transform: translateX(1px); }
+    50%  { transform: translateX(-2px); }
+    75%  { transform: translateX(2px); }
+    100% { transform: translateX(0px); }
+}
+
 /* Mobile adjustments */
 @media (max-width: 768px) {
     h1 {
@@ -177,12 +199,26 @@ footer {
 
     .subheader a {
         color: #00cc00;
-        border-bottom: 2px solid transparent;
-        transition: border-color 0.2s ease;
+        position: relative;
+        text-decoration: none;
     }
 
-    .subheader a:hover {
-        border-bottom: 2px solid #ffcc00;
+    .subheader a::after {
+        content: '';
+        position: absolute;
+        left: 0;
+        bottom: -3px;
+        width: 100%;
+        height: 2px;
+        background-color: #ffcc00;
+        transform: translateX(0);
+        opacity: 0;
+        transition: opacity 0.2s ease;
+    }
+
+    .subheader a:hover::after {
+        opacity: 1;
+        animation: electricWiggle 0.3s infinite linear;
     }
 
     .circle-container {
@@ -227,5 +263,6 @@ footer {
         max-width: 100%;
     }
 }
+
 
 
