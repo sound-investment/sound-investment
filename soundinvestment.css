@@ -21,13 +21,15 @@ h1 {
     margin-bottom: 90px;
 }
 
-/* Finance Green Link */
 .subheader a {
     font-family: "Times New Roman", serif;
     font-style: italic;
-    color: #00cc00;
+    color: #00cc00; /* finance green */
     text-decoration: none;
-    text-shadow: 0 0 4px #00cc00, 0 0 6px #009900; /* glow effect */
+    -webkit-text-stroke: 0.5px gold; /* gold stroke */
+    text-shadow:
+        0 0 1px gold,
+        0 0 2px #daa520;
 }
 
 .subheader a:hover {
@@ -177,7 +179,10 @@ footer {
 
     .subheader a {
         color: #00cc00;
-        text-shadow: 0 0 4px #00cc00, 0 0 6px #009900;
+        -webkit-text-stroke: 0.5px gold;
+        text-shadow:
+            0 0 1px gold,
+            0 0 2px #daa520;
     }
 
     .circle-container {
@@ -222,5 +227,6 @@ footer {
         max-width: 100%;
     }
 }
+
 
 
