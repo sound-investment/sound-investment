@@ -8,7 +8,7 @@ body {
 /* Header */
 h1 {
     color: #0078d7;
-    margin-bottom: 20px;
+    margin-bottom: 10px; /* Tightened spacing above the shareholder banner */
 }
 
 /* Shareholder Banner */
@@ -18,8 +18,8 @@ h1 {
     font-weight: bold;
     color: #ff0000;
     background-color: #ffff00;
-    padding: 8px 12px;
-    margin: -10px auto 40px;
+    padding: 6px 10px;
+    margin: 5px auto 50px; /* Tighter above, more space below */
     display: inline-block;
     border: 2px dashed #0000ff;
     text-align: center;
@@ -183,7 +183,13 @@ footer {
 @media (max-width: 768px) {
     h1 {
         font-size: 25px;
-        margin-bottom: 30px;
+        margin-bottom: 20px;
+    }
+
+    .shareholder-banner {
+        font-size: 16px;
+        padding: 4px 8px;
+        margin: 5px auto 40px;
     }
 
     .circle-container {
