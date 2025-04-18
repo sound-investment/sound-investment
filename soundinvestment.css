@@ -26,14 +26,12 @@ h1 {
     font-style: italic;
     color: #00cc00; /* finance green */
     text-decoration: none;
-    -webkit-text-stroke: 0.5px gold; /* gold stroke */
-    text-shadow:
-        0 0 1px gold,
-        0 0 2px #daa520;
+    border-bottom: 2px solid transparent;
+    transition: border-color 0.2s ease;
 }
 
 .subheader a:hover {
-    text-decoration: underline;
+    border-bottom: 2px solid #ffcc00; /* bright gold/yellow underline */
 }
 
 /* Circular Rotating Text */
@@ -179,10 +177,12 @@ footer {
 
     .subheader a {
         color: #00cc00;
-        -webkit-text-stroke: 0.5px gold;
-        text-shadow:
-            0 0 1px gold,
-            0 0 2px #daa520;
+        border-bottom: 2px solid transparent;
+        transition: border-color 0.2s ease;
+    }
+
+    .subheader a:hover {
+        border-bottom: 2px solid #ffcc00;
     }
 
     .circle-container {
@@ -227,6 +227,5 @@ footer {
         max-width: 100%;
     }
 }
-
 
 
