@@ -25,7 +25,7 @@ h1 {
 .subheader a {
     font-family: "Times New Roman", serif;
     font-style: italic;
-    color: #0078d7;
+    color: green; /* ← try 'green' or a hex like '#00cc00' */
     text-decoration: none;
 }
 
