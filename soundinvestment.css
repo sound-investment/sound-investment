@@ -19,14 +19,15 @@ h1 {
     padding-top: 10px;
     margin-top: 0;
     margin-bottom: 90px;
-    color: #333;
 }
 
+/* Finance Green Link */
 .subheader a {
     font-family: "Times New Roman", serif;
     font-style: italic;
-    color: green; /* changed from #0078d7 to green */
+    color: #00cc00;
     text-decoration: none;
+    text-shadow: 0 0 4px #00cc00, 0 0 6px #009900; /* glow effect */
 }
 
 .subheader a:hover {
@@ -175,9 +176,8 @@ footer {
     }
 
     .subheader a {
-        font-family: "Times New Roman", serif;
-        font-style: italic;
-        color: green;
+        color: #00cc00;
+        text-shadow: 0 0 4px #00cc00, 0 0 6px #009900;
     }
 
     .circle-container {
