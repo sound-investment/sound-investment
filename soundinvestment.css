@@ -33,11 +33,12 @@ h1 {
     content: '';
     position: absolute;
     left: 0;
-    bottom: -3px;
+    bottom: -5px;
     width: 100%;
-    height: 2px;
-    background-color: #ffcc00;
-    transform: translateX(0);
+    height: 12px;
+    background-image: url("data:image/svg+xml,%3Csvg width='16' height='12' viewBox='0 0 24 24' fill='gold' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M7 2L17 10H10L17 22L7 14H14L7 2Z'/%3E%3C/svg%3E");
+    background-repeat: repeat-x;
+    background-size: 12px 12px;
     opacity: 0;
     transition: opacity 0.2s ease;
 }
@@ -198,8 +199,8 @@ footer {
     }
 
     .subheader a {
-        color: #00cc00;
         position: relative;
+        color: #00cc00;
         text-decoration: none;
     }
 
@@ -207,11 +208,12 @@ footer {
         content: '';
         position: absolute;
         left: 0;
-        bottom: -3px;
+        bottom: -5px;
         width: 100%;
-        height: 2px;
-        background-color: #ffcc00;
-        transform: translateX(0);
+        height: 12px;
+        background-image: url("data:image/svg+xml,%3Csvg width='16' height='12' viewBox='0 0 24 24' fill='gold' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M7 2L17 10H10L17 22L7 14H14L7 2Z'/%3E%3C/svg%3E");
+        background-repeat: repeat-x;
+        background-size: 12px 12px;
         opacity: 0;
         transition: opacity 0.2s ease;
     }
@@ -263,6 +265,5 @@ footer {
         max-width: 100%;
     }
 }
-
 
 
